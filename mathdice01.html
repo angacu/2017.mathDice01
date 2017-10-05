@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+    var numeroTotal = 10;
+
+    var valor1 = prompt("Dime un numero figura");
+    var valor1Num=parseInt(valor1);
+    var valor2 = prompt("Dime otro numero figura");
+    var valor2Num=parseInt(valor2);
+
+    var suma = "+";
+    var resta = "-";
+
+    var operador = prompt("Quieres sumar o restar?");
+
+    if (operador!=resta) {
+    var resultadoSuma = (valor1Num + valor2Num);
+      alert (resultadoSuma)
+    }
+
+    else if (operador!=suma) {
+    var resultadoResta = (valor1 - valor2);
+      alert (resultadoResta)
+    }
+
+    if (resultadoSuma==numeroTotal) {
+      alert ("Premio pa ti figura");
+    }
+    else if (resultadoSuma!=numeroTotal) {
+      alert ("Has fallao maquinon");
+    }
+
+    if (resultadoResta==numeroTotal) {
+      alert ("Premio pa ti figura");
+    }
+    else if (resultadoResta!=numeroTotal) {
+      alert ("Has fallao maquinon");
+    }
+
+    </script>
+  </body>
+</html>
